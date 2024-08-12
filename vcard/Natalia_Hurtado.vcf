@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Natalia Hurtado
+N:Hurtado;Natalia;;;
+ORG:Fundación EducaMás
+TITLE:Directora Operativa
+TEL;TYPE=WORK,VOICE:+57 3167433344
+EMAIL;TYPE=PREF,INTERNET:nhurtado@educamas.com.co
+ADR;TYPE=WORK:;;Calle 85 # 12 - 66;Bogotá;;;
+URL:https://www.educamas.com.co
+END:VCARD

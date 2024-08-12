@@ -33,6 +33,38 @@
             position: relative;
             z-index: 1;
         }
+        /* Estilo para centrar el botón sobre la imagen */
+        .vcard-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .vcard-button {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fdc300;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .vcard-button:hover {
+            opacity: 0.9;
+        }
+        /* Ajuste del logo y tamaño de redes sociales */
+        .experience-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .social-icons a {
+            font-size: 32px; /* Aumenta el tamaño de los íconos */
+            margin: 0 15px; /* Aumenta el espacio entre los íconos */
+        }
     </style>
 </head>
 <body class="w3-light-grey">
@@ -47,8 +79,13 @@
         <div class="w3-third">
         
             <div class="w3-white w3-text-grey w3-card-4">
-                <div class="w3-display-container">
+                <div class="vcard-container">
                     <img src="img/Nati.png" style="width:100%" alt="Avatar">
+                    <a href="vcard/Natalia_Hurtado.vcf" download="Natalia_Hurtado.vcf">
+                        <button class="vcard-button">
+                            <i class="fa fa-download"></i> Descargar vCard
+                        </button>
+                    </a>
                     <div class="w3-display-bottomleft w3-container w3-text-white">
                         <h2>Natalia Hurtado</h2>
                     </div>
@@ -59,14 +96,6 @@
                     <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-icon-yellow"></i>nhurtado@educamas.com.co</p>
                     <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-icon-yellow"></i>+57 3167433344</p>
                     <hr>
-                    
-                    <!-- Link to download the vCard -->
-                    <p class="w3-large w3-text-theme"><b><i class="fa fa-address-card fa-fw w3-margin-right w3-icon-yellow"></i>Guardar Contacto</b></p>
-                    <a href="natalia_hurtado.vcf" download="Natalia_Hurtado.vcf">
-                        <button class="w3-button w3-yellow w3-round-large w3-margin-bottom">
-                            <i class="fa fa-download"></i> Descargar vCard
-                        </button>
-                    </a>
                     
                     <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-icon-yellow"></i>Habilidades</b></p>
                     <p>Coaching</p>
@@ -116,7 +145,7 @@
         
             <div class="w3-container w3-card w3-white w3-margin-bottom experience-section">
                 <div class="experience-content">
-                    <img src="img/logoeducamas.png" style="display:block; margin:auto;" alt="Logo">
+                    <img src="img/logoeducamas.png" alt="Logo" class="w3-image">
                     <h2 class="w3-text-grey w3-padding-16">
                         <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-icon-yellow"></i>Experiencia Profesional en la Fundación EducaMás
                     </h2>
@@ -177,12 +206,14 @@
 
 <footer class="w3-container w3-center w3-margin-top">
     <p>Síguenos en redes sociales</p>
-    <a href="https://www.instagram.com/somoseducamas?igsh=MW9zc29oaW8xM203cQ%3D%3D&utm_source=qr" target="_blank">
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-    </a>
-    <a href="https://www.linkedin.com/company/educam%C3%A1s/" target="_blank">
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </a>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/somoseducamas?igsh=MW9zc29oaW8xM203cQ%3D%3D&utm_source=qr" target="_blank">
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/educam%C3%A1s/" target="_blank">
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </a>
+    </div>
     <p>Dirección de la Fundación EducaMás: Calle 85 # 12 - 66 Bogotá </p>
 </footer>
 
