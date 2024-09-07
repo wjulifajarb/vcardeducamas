@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:María Alejandra Baene
+N:Baene;María Alejandra;;;
+ORG:Fundación EducaMás
+TITLE:Directora Ejecutiva
+TEL;TYPE=WORK,VOICE:+52 551249290
+EMAIL;TYPE=PREF,INTERNET:mbaene@educamas.com.co
+ADR;TYPE=WORK:;;Calle 85 # 12 - 66;Bogotá;;;
+URL:https://www.educamas.com.co
+END:VCARD
