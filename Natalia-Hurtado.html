@@ -13,7 +13,7 @@
         .w3-icon-yellow .fa {color: rgb(255, 196, 0)!important}
         .w3-bg-yellow {background-color: #fdc300!important}
         .w3-hover-opacity:hover {opacity: 0.7;}
-        footer {background-color: #d8d8d8!important;}
+        footer {background-color: #d8d8d8!important; padding: 20px 10px;}
         .experience-section {
             position: relative;
         }
@@ -33,70 +33,69 @@
             position: relative;
             z-index: 1;
         }
-        /* Estilo para centrar el botón sobre la imagen */
-        .vcard-container {
-            position: relative;
+        .vcard-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .vcard-name {
             text-align: center;
-            color: white;
+            font-size: 24px;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #000;
         }
         .vcard-button {
-            position: absolute;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
             background-color: #fdc300;
             color: white;
             padding: 10px 20px;
             border: none;
             border-radius: 8px;
             cursor: pointer;
+            display: block;
+            margin: 10px auto;
         }
         .vcard-button:hover {
             opacity: 0.9;
         }
-        /* Ajuste del logo y tamaño de redes sociales */
-        .experience-content img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
+        .social-icons {
+            margin-top: 10px;
         }
         .social-icons a {
-            font-size: 32px; /* Aumenta el tamaño de los íconos */
-            margin: 0 15px; /* Aumenta el espacio entre los íconos */
+            font-size: 32px;
+            margin: 0 15px;
+            color: #333;
+        }
+        .social-icons a:hover {
+            opacity: 0.8;
+        }
+        .footer-text {
+            margin-bottom: 8px;
         }
     </style>
 </head>
 <body class="w3-light-grey">
 
-<!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-    <!-- The Grid -->
     <div class="w3-row-padding">
-    
         <!-- Left Column -->
         <div class="w3-third">
-        
             <div class="w3-white w3-text-grey w3-card-4">
                 <div class="vcard-container">
-                    <img src="img/Nati.png" style="width:100%" alt="Avatar">
-                    <a href="vcard/Natalia_Hurtado.vcf" download="Natalia_Hurtado.vcf">
-                        <button class="vcard-button">
-                            <i class="fa fa-download"></i> Descargar vCard
-                        </button>
-                    </a>
-                    <div class="w3-display-bottomleft w3-container w3-text-white">
-                        <h2>Natalia Hurtado</h2>
-                    </div>
+                    <img src="img/Nati.jpg" alt="Avatar">
                 </div>
+                <div class="vcard-name">Natalia Hurtado</div>
                 <div class="w3-container">
                     <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-icon-yellow"></i>Directora Operativa</p>
                     <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-icon-yellow"></i>Colombia</p>
                     <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-icon-yellow"></i>nhurtado@educamas.com.co</p>
                     <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-icon-yellow"></i>+57 3167433344</p>
+                    <a href="vcard/Natalia_Hurtado.vcf" download="Natalia_Hurtado.vcf">
+                        <button class="vcard-button">
+                            <i class="fa fa-download"></i> Descargar vCard
+                        </button>
+                    </a>
                     <hr>
-                    
                     <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-icon-yellow"></i>Habilidades</b></p>
                     <p>Coaching</p>
                     <div class="w3-light-grey w3-round-xlarge w3-small">
@@ -114,12 +113,11 @@
                     <div class="w3-light-grey w3-round-xlarge w3-small">
                         <div class="w3-container w3-center w3-round-xlarge w3-bg-yellow" style="width:80%"></div>
                     </div>
+                    <p>Relacionamiento con aliados</p>
                     <div class="w3-light-grey w3-round-xlarge w3-small">
                         <div class="w3-container w3-center w3-round-xlarge w3-bg-yellow" style="width:95%"></div>
                     </div>
-                    <p>Relacionamiento con aliados</p>
                     <br>
-
                     <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-icon-yellow"></i>Idiomas</b></p>
                     <p>Inglés - Nivel avanzado</p>
                     <div class="w3-light-grey w3-round-xlarge">
@@ -136,13 +134,10 @@
                     <br>
                 </div>
             </div>
-
-        <!-- End Left Column -->
         </div>
-        
+
         <!-- Right Column -->
         <div class="w3-twothird">
-        
             <div class="w3-container w3-card w3-white w3-margin-bottom experience-section">
                 <div class="experience-content">
                     <img src="img/logoeducamas.png" alt="Logo" class="w3-image">
@@ -154,11 +149,11 @@
                         <h6 class="w3-text-yellow"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2024 — Actualmente</h6>
                         <ul>
                             <li>Desarrollar, implementar y ejecutar estrategias y planes operativos para alcanzar los objetivos de Educamás.</li>
-                            <li>Coordinar y supervisar la implementación y gestión de programas y proyectos educativos, incluyendo la planificación y evaluación de los mismos.</li>
-                            <li>Representar a la fundación en eventos, conferencias y otras reuniones relevantes para establecer relacionamiento comercial y operativo con aliados estratégicos, socios, donantes</li>
-                            <li>Diseñar, monitorear y analizar los indicadores claves de los proyectos para evaluar el progreso en el cumplimiento de los objetivos de la Fundación</li>
-                            <li>Garantizar el cumplimiento de los objetivos de Educamás</li>
-                            <li>Ser mentor de al menos un estudiante de Educamás aportando herramientas para su desarrollo personal y profesional.</li>
+                            <li>Coordinar y supervisar la implementación y gestión de programas y proyectos educativos.</li>
+                            <li>Representar a la fundación en eventos y reuniones con aliados estratégicos.</li>
+                            <li>Monitorear indicadores claves de los proyectos.</li>
+                            <li>Garantizar el cumplimiento de los objetivos de Educamás.</li>
+                            <li>Ser mentor de al menos un estudiante de Educamás.</li>
                         </ul>
                         <hr>
                     </div>
@@ -166,16 +161,12 @@
                         <h5 class="w3-opacity"><b>Directora de Desarrollo Humano, Cultura y Bienestar</b></h5>
                         <h6 class="w3-text-yellow"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023 — 2024</h6>
                         <ul>
-                            <li>Crear, liderar y asegurar el proceso de inducción y re inducción de los empleados de
-                                la fundación.</li>
-                            <li>Crear, liderar y asegurar los procesos de evaluación de Competencias, desempeño,
-                                Cultura.</li>
-                            <li>Bienestar y Ambiente Organizacional.</li>
-                            <li>Asegurar la gestión integral en la documentación de procesos de la fundación.</li>
-                            <li>Manejar a los clientes y empresas aliadas según sus necesidades.</li>
-                            <li>Crear nuevos programas y alianzas con las partes interesadas.</li>
-                            <li>Dirigir el programa de convocatoria y selección de estudiantes y mentores.
-                            </li>
+                            <li>Gestionar procesos de inducción y evaluación de desempeño.</li>
+                            <li>Promover el bienestar y ambiente organizacional.</li>
+                            <li>Gestión documental de procesos.</li>
+                            <li>Relación con clientes y empresas aliadas.</li>
+                            <li>Diseño de programas y alianzas.</li>
+                            <li>Gestión de convocatorias y selección de estudiantes y mentores.</li>
                         </ul>
                         <hr>
                     </div>
@@ -183,38 +174,34 @@
                         <h5 class="w3-opacity"><b>Directora de Desarrollo de Talento</b></h5>
                         <h6 class="w3-text-yellow"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 — 2023</h6>
                         <ul>
-                            <li>Manejar a los clientes y empresas aliadas según sus necesidades.</li>
-                            <li>Crear nuevos programas y alianzas con las partes interesadas.</li>
-                            <li>Dirigir el programa de convocatoria y selección de estudiantes y mentores. </li>
-                            <li>Dirigir y realizar el proceso de formación de mentores.</li>
-                            <li>Dirigir el proceso de acompañamiento, desarrollo humano y psicosocial de los
-                                estudiantes.</li>
-                            <li>Dirigir el proceso de empleabilidad de los estudiantes.</li>
+                            <li>Relación con clientes y empresas aliadas.</li>
+                            <li>Creación de programas y alianzas.</li>
+                            <li>Formación de mentores.</li>
+                            <li>Acompañamiento psicosocial a estudiantes.</li>
+                            <li>Promoción de la empleabilidad.</li>
                         </ul>
                         <br>
                     </div>
                 </div>
             </div>
-        <!-- End Right Column -->
         </div>
-        
-    <!-- End Grid -->
     </div>
-    
-<!-- End Page Container -->
 </div>
 
 <footer class="w3-container w3-center w3-margin-top">
-    <p>Síguenos en redes sociales</p>
+    <p class="footer-text">
+        Síguenos en redes sociales | 
+        <a href="https://educamas.com.co" target="_blank" style="color:inherit; text-decoration: underline;">www.educamas.com.co</a>
+    </p>
     <div class="social-icons">
-        <a href="https://www.instagram.com/somoseducamas?igsh=MW9zc29oaW8xM203cQ%3D%3D&utm_source=qr" target="_blank">
+        <a href="https://www.instagram.com/somoseducamas" target="_blank" title="Instagram">
             <i class="fa fa-instagram w3-hover-opacity"></i>
         </a>
-        <a href="https://www.linkedin.com/company/educam%C3%A1s/" target="_blank">
+        <a href="https://www.linkedin.com/company/educam%C3%A1s/" target="_blank" title="LinkedIn">
             <i class="fa fa-linkedin w3-hover-opacity"></i>
         </a>
     </div>
-    <p>Dirección de la Fundación EducaMás: Calle 85 # 12 - 66 Bogotá </p>
+    <p>Dirección de la Fundación EducaMás: Calle 85 # 12 - 66 Bogotá</p>
 </footer>
 
 </body>
